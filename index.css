@@ -23,8 +23,10 @@ body
 --header-btn-height:90%;
 
 /* MAIN  */
---main-bg                       : white;
+--main-bg                       : var(--mainColor);
 --main-width                    : 95%;
+--main-max-width                : 989px;
+--main-height                   : "fit-content";
 
 --main-item-width               : 100%;
 --main-item-height              : calc(var(--body-width) * .7);
@@ -45,7 +47,6 @@ body
  
 --projects-description-width    : 100%;
 --projects-description-height   : "fit-content";
---description-padding           : 10px;
 
 --drescription-btn-width        : 100px;
 --drescription-btn-height       : 40px;
@@ -53,6 +54,7 @@ body
     width: var(--body-width);
     min-width: var(--body-min-width);
     background-color: var(--mainColor);
+
 }
 
 

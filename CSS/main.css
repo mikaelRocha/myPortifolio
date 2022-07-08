@@ -1,101 +1,117 @@
 .main
 {
-    width: var(--main-width);
-    height: 3000px;
-    border: 2px solid white;
-    margin:auto ;
+    position         : relative;
+    width            : var(--main-width);
+    max-width        : var(--main-max-width);
+    height           : var(--main-height);
+    margin           :auto ;
 
-    background-color: var(--main-bg);
+    background-color : var(--main-bg);
+    overflow         : hidden;
 
-    z-index: 2;
+    z-index          : 1;
 }
 .main__item:first-of-type
 {
-    margin-top: calc(var(--header-height) + 1vh);
+    position         : relative;
+    margin-top       : var(--header-height);
+     
+    z-index          : 2;
+}
+.main__item:first-of-type::before
+{
+    position         : absolute;
+    width            : 100%;
+    height           : 2vh;
+         
+    content          : "";
+    background-color : rgb(0, 0, 0);
+    bottom           : -2vh;
+    box-shadow       : 0px 0px 20px 10px rgba(0, 0, 0, 0.907);
 }
 .main__item
 {
-    width: var(--main-item-width);
-    height:var(--main-item-height) ;
-    min-height: var(--main-item-min-height);
-    margin-top: 1vh;
-
-    background-color:rebeccapurple ;
+    width            : var(--main-item-width);
+    height           : var(--main-item-height) ;
+    min-height       : var(--main-item-min-height);
+    margin-top       : 2px;
 }
 .main__projects
 {
-    display: flex;
-    width :var(--main-projects-width);
-    height:var(--main-projects-height);
+    display          : flex;
+    width            : var(--main-projects-width);
+    height           : var(--main-projects-height);
 
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap:wrap;
-    overflow-x: scroll;
-    list-style: none;
-    color: white;
+    align-items      : center;
+    justify-content  : flex-start;
+    padding-top      : 20px;
+    flex-wrap        : wrap;
+    overflow-x       : scroll;
+    list-style       : none;
+    color            : white;
+
 }
 .projects__item
 {
-    position: relative;
-    width : var(--projects-item-width);
-    height: var(--projects-item-height);
-    border: 1px solid white;
+    position        : relative;
+    width           : var(--projects-item-width);
+    height          : var(--projects-item-height);
+    border          : 1px solid white;
 
-    list-style: none;
+    list-style      : none;
 }
 .projects__item img
 {
-    position: absolute;
-    width : var(--projects-img-width);
-    height: var(--projects-img-height);
-    top: 0;
+    position        : absolute;
+    width           : var(--projects-img-width);
+    height          : var(--projects-img-height);
+    top             : 0;
 }
 .projects__item h1
 {
-    position: absolute;
-    height: var(--projects-title-height);
-    width : var(--projects-title-width);
+    position        : absolute;
+    height          : var(--projects-title-height);
+    width           : var(--projects-title-width);
     
-    text-align: center;
-    font-size: var(--title-size);
-    background: rgba(0, 0, 0, 0.692);
-    z-index: 1;
+    text-align      : center;
+    font-size       : var(--title-size);
+    background      : rgba(0, 0, 0, 0.692);
+    z-index         : 1;
 }
 .projects__description
 {
-    position: absolute;
-    display: flex;
-    width : var(--projects-description-width);
-    height: var(--projects-description-height);
-    bottom: 0;
+    position        : absolute;
+    display         : flex;
+    width           : var(--projects-description-width);
+    height          : var(--projects-description-height);
+    bottom          : 0;
 
-    flex-direction: column;
-    justify-content: center;
-    padding: var(--description-padding);
-    gap: 5px;
-    background: rgba(0, 0, 0, 0.692);
+    flex-direction  : column;
+    justify-content : center;
+    padding         : 10px;
+    gap             : 5px;
+    background      : rgba(0, 0, 0, 0.692);
 
-    z-index: 1;
+    z-index         : 1;
 }
 .projects__description p
 {
-text-align:justify;
+text-align          :justify;
 }
 .descriptions__links
 {
-    display: flex;
-    justify-content: space-around;
+    display         : flex;
+    justify-content : space-around;
 }
 .projects__description a
 {
-    width: var(--drescription-btn-width);
-    border-radius: 20px;
+    width           : var(--drescription-btn-width);
+    border-radius   : 20px;
 
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    background: rgb(208, 255, 0);
+    padding         : 10px;
+    text-align      : center;
+    text-decoration : none;
+    background      : rgb(208, 255, 0);
 }
 
 
