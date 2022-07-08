@@ -1,0 +1,58 @@
+@import url('./CSS/header.css');
+@import url('./CSS/main.css');
+@import url("/CSS/medias.css");
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+--mainColor:#171515;
+--body-width:99vw;
+--body-min-width:350px;
+
+/* HEADER */
+--header-height:70px;
+--header-width:100%;
+
+--headerBtn-bg:linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+--header-btn-height:90%;
+
+/* MAIN  */
+--main-bg                       : white;
+--main-width                    : 95%;
+
+--main-item-width               : 100%;
+--main-item-height              : calc(var(--body-width) * .7);
+--main-item-min-height          : calc(var(--body-min-width) * .7);
+ 
+--main-projects-width           : 100%;
+--main-projects-height          : 100%;
+ 
+--projects-item-width           : calc(var(--main-projects-width)/2);
+--projects-item-height          : 100%;
+ 
+--projects-title-width          : 100%;
+--projects-title-height         : "fit-content";
+--title-size                    : 15px;
+ 
+--projects-img-width            : var(--main-item-width);
+--projects-img-height           : 100%;
+ 
+--projects-description-width    : 100%;
+--projects-description-height   : "fit-content";
+--description-padding           : 10px;
+
+--drescription-btn-width        : 100px;
+--drescription-btn-height       : 40px;
+
+    width: var(--body-width);
+    min-width: var(--body-min-width);
+    background-color: var(--mainColor);
+}
+
+

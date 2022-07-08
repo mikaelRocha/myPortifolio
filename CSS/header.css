@@ -1,0 +1,29 @@
+.header
+{
+    position: fixed;
+    display: flex;
+    height: var(--header-height);
+    width: var(--header-width);
+    border: 3px dashed white;
+    box-shadow: 0 0 5px 3px;
+
+    align-items:center;
+    gap: 5px;
+    background-color:var(--mainColor) ;
+
+    z-index: 2;
+}
+
+[headerBtn] 
+{
+    height:var(--header-btn-height);
+    flex: 1;
+    border: none;
+    border-radius: 20px;
+    
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    background-image: var(--headerBtn-bg) ;
+}
+
+
