@@ -1,11 +1,14 @@
 .main
 {
+    display          : flex;
     position         : relative;
     width            : var(--main-width);
     max-width        : var(--main-max-width);
     height           : var(--main-height);
     margin           :auto ;
 
+    flex-direction: column;
+    gap: 10px;
     background-color : var(--main-bg);
     overflow         : hidden;
 
@@ -31,9 +34,9 @@
 }
 .main__item
 {
+    position         : relative;
     width            : var(--main-item-width);
     height           : var(--main-item-height) ;
-    min-height       : var(--main-item-min-height);
     margin-top       : 2px;
 }
 .main__projects
@@ -42,14 +45,20 @@
     width            : var(--main-projects-width);
     height           : var(--main-projects-height);
 
+
     align-items      : center;
     justify-content  : flex-start;
     padding-top      : 20px;
     flex-wrap        : wrap;
     overflow-x       : scroll;
+    scrollbar-width  : none ;
     list-style       : none;
     color            : white;
 
+}
+.main__projects::-webkit-scrollbar 
+{
+    display          : none;
 }
 .projects__item
 {
@@ -103,7 +112,7 @@ text-align          :justify;
     display         : flex;
     justify-content : space-around;
 }
-.projects__description a
+[btn="projects__btn"]
 {
     width           : var(--drescription-btn-width);
     border-radius   : 20px;
@@ -111,7 +120,117 @@ text-align          :justify;
     padding         : 10px;
     text-align      : center;
     text-decoration : none;
-    background      : rgb(208, 255, 0);
+    background      : rgb(0, 187, 255);
+}
+
+
+/* CERTIFICATES */
+.certificates
+{
+display             : flex ;
+margin              : auto;
+width               : var(--certificates-width);
+height              : var(--certificates-height);
+border-radius       : 5%;
+
+
+align-items         : center;
+justify-content     : center;
+text-justify        : justify;
+padding             : 50px;
+font-size           : 30pt;
+font-weight         : 800;
+color               : rgb(177, 174, 174);
+box-shadow          : inset 0 0 200px 100px black;
+text-shadow         : 3px 3px 4px rgb(62, 62, 62);
+background-image    : linear-gradient(to top, #252525 0%, #212121 100%);
+}
+
+/* ABOUT */
+
+.about
+{
+    width           : var(--about-width);
+    height          : var(--about-height);
+    border          : 20px groove yellow ;
+    border-top      : 20px solid transparent ;
+    border-bottom   : 20px solid transparent ;
+
+    padding         : 20px ;
+    color           : white ;
+}
+
+/* Contacts */
+
+.contacts
+{
+    display         : flex ;
+    width           : var(--contacts-width);
+    height          : var(--contacts-height);
+    border          : 20px groove yellow ;
+    border-top      : 20px solid transparent ;
+    border-bottom   : 20px solid transparent ;
+
+    flex-direction  : column;
+    gap             : 5px;
+    color           : white ;
+}
+
+.contacts__item
+{
+display             : flex ;
+position            : relative;
+width               : 50%;
+min-width           : 289px;
+left                : 1vw;
+border-radius       : 10px ;
+
+
+align-items         : center;
+padding             : 10px;
+background          : #252525;
+}
+.contacts__item span
+{
+display             : flex;
+position            : absolute;
+width               : 70%;
+height              : 25px;
+right               : 5px;
+border-radius       : 5px;
+
+align-content       : center;
+justify-content     : flex-start;
+overflow            : hidden;
+padding-top         : 3px;
+text-indent         : 10px;
+
+background          : #5c5c5c;
+}
+.email
+{
+    display:none;
+}
+.contacts__item span a
+{
+color              : #252525;
+text-decoration    : none;
+}
+
+.contacts__item span button
+{
+position            : absolute;
+width               : 30px;
+top                 : 0 ;
+bottom              : 0;
+right               : 0;
+border              : none;
+border-radius       : 0 5px 5px 0 ;
+box-shadow          : -0px 0 3px black;
+
+background          : #a3a3a3;
+
+z-index: 1;
 }
 
 

@@ -10,22 +10,19 @@
 </head>
 <body>
     <header class="header">
-        <button headerBtn="projects">Projects</button>
-        <button headerBtn="about">About</button>
-        <button headerBtn="certificates">Certificates</button>
-        <button headerBtn="contacts">Contacts</button>
+        <button btn="header__btn" goto="projectPlace" >        Projects       </button>
+        <button btn="header__btn" goto="aboutPlace">           About          </button>
+        <button btn="header__btn" goto="certificatePlace">     Certificates   </button>
+        <button btn="header__btn" goto="contactPlace">         Contacts       </button>
     </header>
+
     <main class="main">
         <section class="main__item" >
-            <video width="100%" height="100%" controls>
-                <source src="./videos/welcome.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/0J2QdDbelmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
         <section class="main__item">
-                <ul class="main__projects">
+                <ul class="main__projects" id="projectPlace">
 
                     <li class="projects__item">
                         <h1> Triwizard Tournament,<br/> Virtual Globet of Fire</h1>
@@ -39,9 +36,8 @@
 
                             <div class="descriptions__links">
 
-                                <a href="" >Code </a>
-
-                                <a href="" >Aplication</a>
+                                <a href="" btn="projects__btn">Code      </a>
+                                <a href="" btn="projects__btn">Aplication</a>
 
                             </div>
                             
@@ -51,75 +47,95 @@
 
                     <li class="projects__item">
                         <h1> Triwizard Tournament,<br/> Virtual Globet of Fire</h1>
+
                         <img src="https://www.emp.co.uk/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw22f85923/images/4/8/2/4/482480d.jpg?sfrm=png" class=""/>
+                        
                         <div class="projects__description"> 
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum impedit eum. Quam, molestiae deleniti error, perspiciatis est delectus nulla, sunt temporibus repellendus animi recusandae at explicabo culpa ea in! Numquam aperiam illum hic repudiandae? Voluptates molestias suscipit nisi, deleniti dignissimos ipsam. Provident cupiditate quidem ad inventore corporis illum voluptatem.
                             </p>
+
                             <div class="descriptions__links">
-                                <a href="" >Code </a>
-                                <a href="" >Aplication</a>
+
+                                <a href="" btn="projects__btn">Code      </a>
+                                <a href="" btn="projects__btn">Aplication</a>
+
                             </div>
                             
                         </div>
+
                     </li>
 
                     <li class="projects__item">
                         <h1> Triwizard Tournament,<br/> Virtual Globet of Fire</h1>
+
                         <img src="https://www.emp.co.uk/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw22f85923/images/4/8/2/4/482480d.jpg?sfrm=png" class=""/>
+                        
                         <div class="projects__description"> 
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum impedit eum. Quam, molestiae deleniti error, perspiciatis est delectus nulla, sunt temporibus repellendus animi recusandae at explicabo culpa ea in! Numquam aperiam illum hic repudiandae? Voluptates molestias suscipit nisi, deleniti dignissimos ipsam. Provident cupiditate quidem ad inventore corporis illum voluptatem.
                             </p>
+
                             <div class="descriptions__links">
-                                <a href="" >Code </a>
-                                <a href="" >Aplication</a>
+
+                                <a href="" btn="projects__btn">Code      </a>
+                                <a href="" btn="projects__btn">Aplication</a>
+
                             </div>
                             
                         </div>
-                    </li>
-                    
-                    <li class="projects__item">
-                        <h1> Triwizard Tournament,<br/> Virtual Globet of Fire</h1>
-                        <img src="https://www.emp.co.uk/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw22f85923/images/4/8/2/4/482480d.jpg?sfrm=png" class=""/>
-                        <div class="projects__description"> 
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum impedit eum. Quam, molestiae deleniti error, perspiciatis est delectus nulla, sunt temporibus repellendus animi recusandae at explicabo culpa ea in! Numquam aperiam illum hic repudiandae? Voluptates molestias suscipit nisi, deleniti dignissimos ipsam. Provident cupiditate quidem ad inventore corporis illum voluptatem.
-                            </p>
-                            <div class="descriptions__links">
-                                <a href="" >Code </a>
-                                <a href="" >Aplication</a>
-                            </div>
-                            
-                        </div>
+
                     </li>
 
-                    <li class="projects__item">
-                        <h1> Triwizard Tournament,<br/> Virtual Globet of Fire</h1>
-                        <img src="https://www.emp.co.uk/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw22f85923/images/4/8/2/4/482480d.jpg?sfrm=png" class=""/>
-                        <div class="projects__description"> 
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum impedit eum. Quam, molestiae deleniti error, perspiciatis est delectus nulla, sunt temporibus repellendus animi recusandae at explicabo culpa ea in! Numquam aperiam illum hic repudiandae? Voluptates molestias suscipit nisi, deleniti dignissimos ipsam. Provident cupiditate quidem ad inventore corporis illum voluptatem.
-                            </p>
-                            <div class="descriptions__links">
-                                <a href="" >Code </a>
-                                <a href="" >Aplication</a>
-                            </div>
-                            
-                        </div>
-                    </li>
                 </ul>
         </section>
 
         <section class="main__item" >
+           <div class="about" id="aboutPlace">
+                <h1>About-me</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio commodi voluptate molestias illo sapiente, velit repellendus amet provident voluptates esse adipisci, quos illum minima facere harum sint sit, aspernatur eius ex voluptatem totam corporis libero excepturi beatae. Maiores ab sint sapiente sunt vero cum labore nisi, pariatur ratione esse in error sed et ex libero fugiat asperiores, soluta iste voluptatum aliquam! Voluptate earum ducimus libero possimus impedit vero maiores ut dicta labore praesentium, voluptatem consectetur accusantium dolorem deleniti repellendus saepe repudiandae facere sunt nemo temporibus perferendis dignissimos odit sint. Sunt officia repellendus eos earum, neque aut. Aut quibusdam enim explicabo?
+           </div>
         </section>
 
         <section class="main__item" >
+            <div class="certificates" id="certificatePlace">
+                There is no certificates to show yet..
+            </div>
         </section>
 
         <section class="main__item" >
+            <div class="contacts" id="contactPlace">
+
+               <p class="contacts__item">Whatsapp   
+                    <span>CONTACT 
+                        <button btn="contacts_whatsapp">Copy</button> 
+                    </span>
+               </p>
+
+               <p class="contacts__item">E-mail     
+                    <span>
+                        Mikaelrochadejesus@gmail.com 
+                        <textarea readonly class="email">Mikaelrochadejesus@gmail.com 
+                        </textarea>
+                        <button btn="contacts_email" id="email">Copy</button> 
+                    </span>
+               </p>
+
+               <p class="contacts__item">Linkedin   
+                    <span>
+                    <a href="https://www.linkedin.com/in/mikael-rocha-170939127/">See My Linkedin Profile</a>
+                    </span>
+               </p>
+
+               <p class="contacts__item">GitHub     
+                    <span>  
+                        <a href="https://github.com/mikaelRocha">See My GitHub Profile</a>  
+                    </span>
+               </p>
+
+           </div>
         </section>
     </main>
-    
+    <script src="./index.js"></script>
 </body>
 </html>

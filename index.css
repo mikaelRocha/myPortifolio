@@ -23,20 +23,22 @@ body
 --header-btn-height:90%;
 
 /* MAIN  */
+
 --main-bg                       : var(--mainColor);
 --main-width                    : 95%;
 --main-max-width                : 989px;
 --main-height                   : "fit-content";
 
 --main-item-width               : 100%;
---main-item-height              : calc(var(--body-width) * .7);
---main-item-min-height          : calc(var(--body-min-width) * .7);
- 
+--main-item-height              : "fit-content";
+
+ /* Projects */
+
 --main-projects-width           : 100%;
---main-projects-height          : 100%;
+--main-projects-height          : 500px;
  
 --projects-item-width           : calc(var(--main-projects-width)/2);
---projects-item-height          : 100%;
+--projects-item-height          : 300px;
  
 --projects-title-width          : 100%;
 --projects-title-height         : "fit-content";
@@ -49,7 +51,24 @@ body
 --projects-description-height   : "fit-content";
 
 --drescription-btn-width        : 100px;
---drescription-btn-height       : 40px;
+
+
+/* Certificates */
+
+--certificates-width            : 99%;
+--certificates-height           : calc(var(--body-width) /1.7 ); 
+
+/* About */
+
+--about-width                   : 100%;
+--about-height                  : 500px;
+
+/* Contacts */
+
+--contacts-width                 : 100%;
+--contacts-height                : 100%;
+
+
 
     width: var(--body-width);
     min-width: var(--body-min-width);
