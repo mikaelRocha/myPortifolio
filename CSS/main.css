@@ -63,8 +63,6 @@
 .projects__item
 {
     position        : relative;
-    width           : var(--projects-item-width);
-    height          : var(--projects-item-height);
     border          : 1px solid white;
 
     list-style      : none;

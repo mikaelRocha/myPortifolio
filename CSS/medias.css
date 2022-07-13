@@ -13,11 +13,7 @@
 @media (max-width:700px)
 {
 
-    .projects__description p
-    {
-      
-        display         : none;
-    }
+
     .main__projects
     {
         align-items     : flex-start;
@@ -25,8 +21,8 @@
     }
     .projects__item
     {
-        width           : 240px;
-        /* height          : 483px; */
+        width           : var(--projects-item-width-max700);
+        height          : var(--projects-item-height-max700) ;
     }
 }
 
@@ -40,8 +36,8 @@
     }
     .projects__item
     {
-        width           : 325px;
-        height          : 483px;
+        width           : var(--projects-item-width-min700);
+        height          : var(--projects-item-height-min700);
     }
 }
 

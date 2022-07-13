@@ -5,22 +5,23 @@
 
 *
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin                      : 0;
+    padding                     : 0;
+    box-sizing                  : border-box;
 }
 body
 {
---mainColor:#171515;
---body-width:99vw;
---body-min-width:350px;
+ /* BODY  */
+--mainColor                     :#171515;
+--body-width                    :99vw;
+--body-min-width                :350px;
 
 /* HEADER */
---header-height:70px;
---header-width:100%;
+--header-height                 : 70px;
+--header-width                  : 100%;
 
---headerBtn-bg:linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
---header-btn-height:90%;
+--headerBtn-bg                  : linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+--header-btn-height             : 90%;
 
 /* MAIN  */
 
@@ -28,6 +29,8 @@ body
 --main-width                    : 95%;
 --main-max-width                : 989px;
 --main-height                   : "fit-content";
+
+/* MAIN ITEM */
 
 --main-item-width               : 100%;
 --main-item-height              : "fit-content";
@@ -37,14 +40,16 @@ body
 --main-projects-width           : 100%;
 --main-projects-height          : 500px;
  
---projects-item-width           : calc(var(--main-projects-width)/2);
---projects-item-height          : 300px;
+--projects-item-width-max700    : 240px;
+--projects-item-width-min700    : 325px;
+--projects-item-height-max700   : 325px;
+--projects-item-height-min700   : 483px;
  
 --projects-title-width          : 100%;
 --projects-title-height         : "fit-content";
 --title-size                    : 15px;
  
---projects-img-width            : var(--main-item-width);
+--projects-img-width            : 100%;
 --projects-img-height           : 100%;
  
 --projects-description-width    : 100%;
@@ -70,9 +75,9 @@ body
 
 
 
-    width: var(--body-width);
-    min-width: var(--body-min-width);
-    background-color: var(--mainColor);
+    width                        : var(--body-width);
+    min-width                    : var(--body-min-width);
+    background-color             : var(--mainColor);
 
 }
 
